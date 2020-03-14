@@ -1,0 +1,114 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: sans-serif;
+    height: 100%;
+}
+
+nav{
+    background-color: #24272a;
+    /*height: 50px;*/
+    max-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*notacion entre etiquetas
+  hijos directos >*/
+nav > div > a{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+#bedu-logo{
+    /*margin-left: 20px;
+    margin-top: 10px;*/
+    margin: 10px 0 10px 20px;
+    width: 50px;
+}
+
+#bedu-logo svg{
+    fill: white;
+}
+
+section{
+    background-image: url(../images/fondo.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+section #texto{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+h3{
+    margin-top: 0;
+}
+
+p{
+    margin-top: 0;
+    text-align: center;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+input{
+    border: solid 1px #333;
+    padding: 6px 12px ;
+    border-radius: 4px;
+    width: 25%;
+}
+
+footer{
+    height: 150px;
+    background-color: #24272a;
+    color: white;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+}
+
+nav>div>a:hover{
+    color: red;
+}
+
+.container-title-subtitle p:first-child{
+    font-size: 30px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+
+.container-title-subtitle > p:last-child{
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+
+@media screen and (max-width: 600px){
+    section{
+        /*background-color: lightblue;*/
+        background-image: url(../images/arena-escasez.jpg);
+        
+    }
+    input{
+        display: none;
+    }
+}
+
+
+
+
