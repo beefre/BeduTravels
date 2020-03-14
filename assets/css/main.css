@@ -85,7 +85,7 @@ footer p{
 }
 
 nav>div>a:hover{
-    color: red;
+    color: green;
 }
 
 .container-title-subtitle p:first-child{
