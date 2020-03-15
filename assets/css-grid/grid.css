@@ -1,5 +1,6 @@
 html{
     height: 100%;
+    color: white;
 }
 
 body{
@@ -14,6 +15,7 @@ body{
 header{
     background-color: black;
     grid-column: 1 / -1;
+    
 }
 
 aside{
@@ -29,4 +31,33 @@ section{
 footer{
     background-color: grey;
     grid-column: 1 / -1;/*igual que a 4*/
+}
+
+.circulo{
+    width: 400px;
+    height: 400px;
+    background-color: indigo;
+    border-radius: 50% 0 50% 0;
+    transition: all ease-in 5s; /*revisar*/
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px auto 100px 100px;
+    }
+    header{
+        grid-column: 1 / -1;
+    }
+    aside{
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+    section{
+        grid-column: 1 / -1;
+    }
+
+    .circulo{
+        background-color: red;
+    }
 }
