@@ -1,0 +1,54 @@
+html{
+    height: 100%;
+    color: white;
+}
+
+body{
+    height: 100%;
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: column;
+  
+
+}
+
+header{
+    background-color: black;
+    height: 50px;
+/*    flex: 1;*/
+}
+
+aside{
+    background-color: blue;
+    /*flex: 1;*/
+    width: 300px;
+}
+
+section{
+    background-color: greenyellow;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    
+}
+
+footer{
+    background-color: grey;
+    height: 100px;
+    /*flex: 1;*/
+}
+
+.main{
+    flex: 1px;
+    display: flex;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+}
+
