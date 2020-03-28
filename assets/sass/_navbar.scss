@@ -1,0 +1,23 @@
+$navBackground: rgb(168,34,34);
+$green: green;
+$white: white;
+
+nav{
+    /*background-color: #24272a;*/
+    background-color: $navBackground;
+    /*height: 50px;*/
+    max-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > div > a{
+        color:  lighten($green, 50%);
+        text-decoration: none;
+        padding-right: 20px;
+        &:hover{
+            color: lighten($green, 20%);
+        }
+    }
+
+}

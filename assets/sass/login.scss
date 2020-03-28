@@ -1,0 +1,55 @@
+//CON HERENCIA 
+.boton{
+    color: white;
+        width: 100%;
+        background-color: white;
+        &:hover{
+            color: white;
+            background-color: white;
+        }
+}
+
+@mixin btnBackground($color) {
+    background-color: $color;
+    &:hover{
+        background-color: lighten($color,10%);
+    }
+    
+}
+
+.btn-entrar{
+    @extend .boton;
+  @include btnBackground(red);
+}
+    
+.btn-cancelar{   
+    @extend .boton;
+    @include btnBackground(green);
+       
+}
+
+
+//CON MIXINS
+// @mixin boton($color) {
+//     color: white;
+//     width: 100%;
+//     background-color: $color;
+//     &:hover{
+//         color: white;
+//         background-color: lighten($color,10%);
+//     }
+// }
+
+// .logo svg {
+//     width: 100px;
+//     fill: white;
+//   } 
+
+//   .btn-entrar{
+//       @include boton(red);
+//   }
+
+//   .btn-cancelar{
+//     @include boton(green);
+   
+//   }

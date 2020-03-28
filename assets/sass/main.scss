@@ -1,0 +1,131 @@
+@import "navbar";
+
+$fullSize: 100%;
+
+$sm: 600px;
+$alineacion: left;
+
+@mixin centrarTexto {
+    text-align: $alineacion;
+    width: $fullSize;
+    
+}
+
+
+html{
+    height: $fullSize;
+}
+body{
+    font-family: sans-serif;
+    height: $fullSize;
+}
+
+.main-section>div{
+    @include centrarTexto();
+}
+
+
+/*notacion entre etiquetas
+  hijos directos >*/
+
+#bedu-logo{
+    /*margin-left: 20px;
+    margin-top: 10px;*/
+    margin: 10px 0 10px 20px;
+    width: 50px;
+}
+
+#bedu-logo svg{
+    fill: $white;
+}
+
+section{
+    background-image: url(../images/fondo.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+h3{
+    margin-top: 0;
+}
+
+p{
+    margin-top: 0;
+    text-align: center;
+}
+
+input::placeholder{
+    text-align: $alineacion;
+}
+
+input{
+    border: solid 1px #333;
+    padding: 6px 12px ;
+    border-radius: 4px;
+    width: 25%;
+}
+
+footer{
+    height: 150px;
+    background-color: #24272a;
+    color: white;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.container-title-subtitle p:first-child{
+    font-size: 30px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+
+.container-title-subtitle > p:last-child{
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+
+@media screen and (max-width: $sm){
+    section{
+        /*background-color: lightblue;*/
+        background-image: url(../images/arena-escasez.jpg);
+        
+    }
+    input{
+        /* display: none; */
+
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px){
+    footer img{
+         
+            width: 5%;
+            display: inline-block;
+         
+
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px){
+
+}
+
+
+
+
+
