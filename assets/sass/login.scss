@@ -13,12 +13,11 @@
     background-color: $color;
     &:hover{
         background-color: lighten($color,10%);
-    }
-    
+    }    
 }
 
 .btn-entrar{
-    @extend .boton;
+  @extend .boton;
   @include btnBackground(red);
 }
     
