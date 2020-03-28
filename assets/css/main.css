@@ -1,114 +1,96 @@
-html{
-    height: 100%;
-}
-body{
-    font-family: sans-serif;
-    height: 100%;
-}
+nav {
+  /*background-color: #24272a;*/
+  background-color: #a82222;
+  /*height: 50px;*/
+  max-height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav > div > a {
+    color: #80ff80;
+    text-decoration: none;
+    padding-right: 20px; }
+    nav > div > a:hover {
+      color: #00e600; }
 
-nav{
-    background-color: #24272a;
-    /*height: 50px;*/
-    max-height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+html {
+  height: 100%; }
+
+body {
+  font-family: sans-serif;
+  height: 100%; }
+
+.main-section > div {
+  text-align: left;
+  width: 100%; }
 
 /*notacion entre etiquetas
   hijos directos >*/
-nav > div > a{
-    color: #fff;
-    text-decoration: none;
-    padding-right: 20px;
-}
+#bedu-logo {
+  /*margin-left: 20px;
+  margin-top: 10px;*/
+  margin: 10px 0 10px 20px;
+  width: 50px; }
 
-#bedu-logo{
-    /*margin-left: 20px;
-    margin-top: 10px;*/
-    margin: 10px 0 10px 20px;
-    width: 50px;
-}
+#bedu-logo svg {
+  fill: white; }
 
-#bedu-logo svg{
-    fill: white;
-}
+section {
+  background-image: url(../images/fondo.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
 
-section{
-    background-image: url(../images/fondo.jpg);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    
-}
+h3 {
+  margin-top: 0; }
 
-section #texto{
-    color: white;
-    text-align: center;
-    width: 100%;
-}
+p {
+  margin-top: 0;
+  text-align: center; }
 
-h3{
-    margin-top: 0;
-}
+input::placeholder {
+  text-align: left; }
 
-p{
-    margin-top: 0;
-    text-align: center;
-}
+input {
+  border: solid 1px #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  width: 25%; }
 
-input::placeholder{
-    text-align: center;
-}
+footer {
+  height: 150px;
+  background-color: #24272a;
+  color: white; }
 
-input{
-    border: solid 1px #333;
-    padding: 6px 12px ;
-    border-radius: 4px;
-    width: 25%;
-}
+footer p {
+  display: flex;
+  align-items: center; }
 
-footer{
-    height: 150px;
-    background-color: #24272a;
-    color: white;
-}
+.container-title-subtitle p:first-child {
+  font-size: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45); }
 
-footer p{
-    display: flex;
-    align-items: center;
-}
+.container-title-subtitle > p:last-child {
+  font-size: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45); }
 
-nav>div>a:hover{
-    color: green;
-}
+@media screen and (max-width: 600px) {
+  section {
+    /*background-color: lightblue;*/
+    background-image: url(../images/arena-escasez.jpg); }
 
-.container-title-subtitle p:first-child{
-    font-size: 30px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
-}
+  input {
+    /* display: none; */ } }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+  footer img {
+    width: 5%;
+    display: inline-block; } }
+/* Medium devices (landscape tablets, 768px and up) */
 
-.container-title-subtitle > p:last-child{
-    font-size: 20px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
-}
-
-@media screen and (max-width: 600px){
-    section{
-        /*background-color: lightblue;*/
-        background-image: url(../images/arena-escasez.jpg);
-        
-    }
-    input{
-        display: none;
-    }
-}
-
-
-
-
+/*# sourceMappingURL=main.css.map */
